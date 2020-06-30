@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Bài Chuyển Đổi TiềnTệ"

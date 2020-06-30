@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E55F8"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/ednhapsotien"
+        android:background="@drawable/custom_editext"
+        android:layout_marginTop="80dp"
+        android:padding="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/sptiente1"
+            android:background="@drawable/custom_editext"
+            android:layout_marginRight="20dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/btnhoandoi"
+            android:background="@drawable/iconchuyennn"
+            android:layout_width="46dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp" />
+        <Spinner
+            android:id="@+id/sptiente2"
+            android:background="@drawable/custom_editext"            android:layout_marginRight="10dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+        <Button
+            android:id="@+id/btndoi"
+            android:background="@drawable/iconxacnhann"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tiendoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tienduocdoi"
+        android:textSize="40dp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/kq1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/kq2"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

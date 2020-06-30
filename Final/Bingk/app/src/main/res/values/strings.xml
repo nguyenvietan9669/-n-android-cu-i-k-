@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Bài Đăng ký</string>
+    <string-array name="quoctich">
+        <item>Việt Nam</item>
+        <item>Anh</item>
+        <item>...</item>
+    </string-array>
+</resources>

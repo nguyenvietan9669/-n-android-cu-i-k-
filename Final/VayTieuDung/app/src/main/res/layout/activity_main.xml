@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<TextView
+    android:text="VAY TIÊU DÙNG"
+    android:textSize="30dp"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="Thu nhập tháng :"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edthunhapthang"
+            android:background="#FFFFFF"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="Chi phí phải trả trong tháng:"
+            android:textSize="20dp"
+            android:layout_width="150dp"
+            android:layout_height="60dp"/>
+
+        <EditText
+            android:id="@+id/edchiphi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="#FFFFFF"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="Số tiền muốn vay :"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edsotienmuon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:background="#FFFFFF"
+            android:inputType="number"
+            android:padding="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="Lãi suất mong muốn:"
+            android:textSize="20dp"
+            android:layout_width="150dp"
+            android:layout_height="60dp"/>
+       <Spinner
+           android:id="@+id/splaisuat"
+           android:layout_marginTop="7dp"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:padding="10dp"
+           android:entries="@array/phantram"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="Thời gian vay :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <RadioGroup
+            android:id="@+id/group1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rb12"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="12 tháng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/rb18"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="18 tháng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/rb24"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="24 tháng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/group2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="32 tháng" />
+
+            <RadioButton
+                android:id="@+id/rb36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="36 tháng" />
+
+            <RadioButton
+                android:id="@+id/rb42"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="42 tháng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/group3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rb48"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="48 tháng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/rb54"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="54 tháng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/rb62"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="62 tháng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btntinhtoan"
+        android:text="Tính Toán"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="Số tiền phải trả hàng tháng :"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvketqua"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
