@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/item1"
+        android:title="Lịch sử"
+        app:showAsAction="never"/>
+    <item android:id="@+id/item2"
+        android:title="Chọn giao diện"
+        app:showAsAction="never"/>
+    <item android:id="@+id/item3"
+        android:title="Gửi phản hồi"
+        app:showAsAction="never"/>
+    <item android:id="@+id/item4"
+        android:title="Trợ giúp"
+        app:showAsAction="never"/>
+</menu>
